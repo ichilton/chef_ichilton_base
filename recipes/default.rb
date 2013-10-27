@@ -2,7 +2,7 @@
 # Cookbook Name:: ichilton_base
 # Recipe:: default
 #
-# Copyright (C) 2013 YOUR_NAME
-# 
-# All rights reserved - Do Not Redistribute
-#
+
+include_recipe 'ichilton_base::core'
+include_recipe 'ichilton_base::packages'
+include_recipe 'ichilton_base::smtp_daemon'
