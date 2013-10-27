@@ -10,10 +10,10 @@ include_recipe 'apt' if node['platform_family'] == 'debian'
 include_recipe 'resolver'
 
 # locale, date/time etc:
-include_recipe 'system::_locale'
+include_recipe 'ichilton_base::_locale'
 
 # Swap space:
-include_recipe 'system::_swap'
+include_recipe 'ichilton_base::_swap'
 
 # Install compiler and other useful build tools:
 include_recipe 'build-essential'
