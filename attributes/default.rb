@@ -12,7 +12,6 @@ normal[:locale] = 'en_GB.utf8'
 
 normal[:build_essential][:compiletime] = true
 
-normal[:resolver][:search] = node[:domain]
 normal[:resolver][:nameservers] = [ '8.8.8.8', '8.8.4.4' ]
 normal[:resolver][:options] = { :timeout => 2 }
 
