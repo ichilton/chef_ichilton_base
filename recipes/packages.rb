@@ -7,7 +7,7 @@
 include_recipe 'build-essential'
 
 # Install other packages:
-node[:ichilton_base][:packages].each do |pkg|
+node[:ichilton][:base_packages].each do |pkg|
   package pkg
 end
 
