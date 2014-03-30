@@ -5,4 +5,8 @@
 
 include_recipe 'ichilton_base::core'
 include_recipe 'ichilton_base::packages'
-include_recipe 'ichilton_base::smtp_daemon'
+
+if node[:ichilton_base][:smtp_daemon][:enabled]
+  include_recipe 'ichilton_base::smtp_daemon'
+end
+
