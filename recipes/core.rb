@@ -15,8 +15,5 @@ include_recipe 'ichilton_base::_locale'
 # Swap space:
 include_recipe 'ichilton_base::_swap'
 
-# Install compiler and other useful build tools:
-include_recipe 'build-essential'
-
 # Setup sudo:
 include_recipe 'sudo'
