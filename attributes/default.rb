@@ -3,7 +3,7 @@
 # Attributes: default
 #
 
-default[:ichilton][:base_packages] = %w[ bzip2 cron curl dnsutils ftp git rsync screen telnet tmux traceroute vim wget zsh ]
+default[:ichilton][:base_packages] = %w[ bzip2 cron curl dnsutils ftp git rsync screen sudo telnet tmux traceroute vim wget zsh ]
 default[:ichilton][:smtp_daemon][:enabled] = false
 
 normal[:tz] = 'Europe/London'
