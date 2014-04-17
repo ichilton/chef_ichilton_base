@@ -10,7 +10,6 @@ supports 'ubuntu'
 
 depends 'apt'
 depends 'resolver'
-depends 'timezone'
 depends 'ntp'
 depends 'build-essential'
 depends 'sudo'
