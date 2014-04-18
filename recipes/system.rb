@@ -22,4 +22,4 @@ include_recipe 'ichilton_base::_swap'
 include_recipe 'sudo'
 
 # Install/setup ntpd:
-include_recipe 'ntp'
+include_recipe 'ntp' unless system('which openntpd')
