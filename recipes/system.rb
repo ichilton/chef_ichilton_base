@@ -18,8 +18,5 @@ include_recipe 'ichilton_base::_locale'
 # Swap space:
 include_recipe 'ichilton_base::_swap'
 
-# Setup sudo:
-include_recipe 'sudo'
-
 # Install/setup ntpd:
 include_recipe 'ntp' unless system('which openntpd')
