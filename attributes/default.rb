@@ -9,6 +9,7 @@ default[:ichilton][:smtp_daemon][:enabled] = false
 default[:tz] = 'Europe/London'
 default[:locale] = 'en_GB.utf8'
 
+normal['apt']['compile_time_update'] = true
 normal[:build_essential][:compile_time] = true
 
 normal[:resolver][:nameservers] = [ '8.8.8.8', '8.8.4.4' ]
