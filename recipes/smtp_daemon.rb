@@ -10,4 +10,6 @@
 end
 
 # Use postfix cookbook to install:
-include_recipe 'postfix'
+if node[:ichilton][:smtp_daemon][:enabled]
+  include_recipe 'postfix'
+end
