@@ -19,4 +19,7 @@ include_recipe 'ichilton_base::_locale'
 include_recipe 'ichilton_base::_swap'
 
 # Install/setup ntpd:
-include_recipe 'ntp' unless system('which openntpd')
+# include_recipe 'ntp' unless system('which openntpd')
+
+package 'ntp'
+

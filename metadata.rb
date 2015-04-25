@@ -10,6 +10,6 @@ supports 'ubuntu'
 
 depends 'apt'
 depends 'resolver'
-depends 'ntp'
+# depends 'ntp'
 depends 'build-essential'
 depends 'postfix'
